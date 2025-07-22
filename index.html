@@ -2,48 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
     <title>Hello HTML101</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="css/csmjustyle.css">-->
+   <!--<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>-->
+   <link rel="stylesheet" href="css/output.css">
+   <link rel="stylesheet" href="css/csmjustyle.css">
 </head>
 <body>
     <div>
         <header>
-           <h1>Header Area</h1>
-        </header>
-        <nav>
-           <ul>
-            <li><a href="/about.html">About</a>></li><br>
-            <li><a href="/contact.html">About</a></li><br>
-            <li><a href="https://www.google.com">Google</a>></li><br>
-           </ul>
-        </nav>
+           <h1 class="md:text-4xl font-bold text-center bg-gradient-to-r from-red-500
+            via-yellow-500 to-green-500 bg-clip-text text-transparent 
+            sm:text-8xl mb-6">Hello HTML 101</h1>
+         </header>
+         <nav class="bg-blue-100 px-5">
+            <ul class="flex space-x-3 justify-end">
+            <li><a href="/index.html" class="hover:underline">Home</a></li>
+            <li><a href="/about.html" class="hover:underline">About</a></li>
+            <li><a href="/contact.html" class="hover:underline">Contact</a></li>
+            <li><a href="https://www.google.com" class="hover:underline">Google</a></li>
+            </ul>
+         </nav>
         <div>
-           Hi
-           Main Content Area
+         <div class ="mx-auto max-w-2xl py-32 bg-amber-50">
+           <h1 class="text-4xl font-bold">Hi
+           Main Content Area</h1>
            <p>Maejo University</p>
-           <h2>คณะวิทยาศาสตร์</h2>
-           <p>สาขาวิชาวิทยาการคอมพิวเตอร์</p>
-           <img src="image/fish.jpg" alt="รูปปลา"widgth="300"height="400">
-           <img src="https://erp.mju.ac.th/openFile.aspx?id=NzE3MzI0&method=inline"alt="pic"widgth="300"height="400">
-
-           <h3>ตารางรายชื่อนักศึกษา</h3>
-           <table border ="1">
-             <thead>
-                <tr>
-                    <th>รหัสนักศึกษา</th>
-                    <th>ชื่อ-นามสกุล</th>
-                    <th>สาขา</th>
-                </tr>
-             </thead>
-             <tbody>
-                <tr>
-                    <td>6704101333</td>
-                    <td>นาย ธนวัต โวโลชึ่น</td>
-                    <td>วิทยาการคอมพิวเตอร์</td>
-
-                </tr>
-             </tbody>
-           </table>
+           <h2 class="csmju-text">คณะวิทยาศาสตร์</h2>
+           <p class="csmju-text">สาขาวิชาวิทยาการคอมพิวเตอร์</p>
+         </div>
+         <div class="grid grid-cols-2 gap-4 p-4">
+           <img class="cs-image" src="image/fish.jpg" alt="รูปปลา">
+           <img class="cs-image" src="https://erp.mju.ac.th/openFile.aspx?id=NzE3MzI0&method=inline" alt="pic">
+         </div>
+         <h3>ตารางรายชื่อนักศึกษา</h3>
+         <div style="text-align: center;">
+            <table style="margin: 0 auto;">
+               <thead>
+                  <tr>
+                     <th>รหัสนักศึกษา</th>
+                     <th>ชื่อ-นามสกุล</th>
+                     <th>สาขา</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>6704101333</td>
+                     <td>นาย ธนวัต โวโลชึ่น</td>
+                     <td>วิทยาการคอมพิวเตอร์</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
 
            <div>
             <h3>ข่าว 1</h3>

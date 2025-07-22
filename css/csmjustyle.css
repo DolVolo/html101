@@ -1,0 +1,51 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #444243;
+    color: #a94c4c;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+header {
+    background-color: #f0f0f0;
+    color: rgb(1, 239, 56);
+    text-align: left;
+}
+nav {
+    background-color: #f0f0f0;
+    color: rgb(215, 239, 1);
+    text-align: left;
+    padding: 10px;
+}
+nav ol {
+    list-style-type: none;
+    padding: 0;
+}
+nav ol li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ol li a {
+    color: rgb(116, 185, 27);
+    text-decoration: none;
+}
+nav ol li a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color: #f0f0f0;
+    color: rgb(37, 1, 239);
+    text-align: left;
+    padding: 10px;
+}
+.csmju-text{
+    font-size: 1.2em;
+    color: #4ab7ff;
+    margin: 50x 0;
+}
+.cs-image{
+    width: 350px;
+    height: 200px;
+}
