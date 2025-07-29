@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>แบบฟอร์มการรับสมัคร</h1>
+        <form action="">
+            <label for ="name">ชื่อ-นามสกุล:</label>
+            <input type="text" name="name" required minlenght="1" maxlength="20"><br>
+            <label for ="email">อีเมล: stu67xxxxxxx@mju.ac.th </label>
+            <input type="email" name="email" 
+            required
+            pattern="^stu[0-9]{10}@mju\.ac\.th"><br>
+
+            <label for ="grade">Grade: A, B+,B, C+, C,D+, D, F</label>
+            <input type="text" name="grade" 
+            required
+            pattern="^(A|B\+|B|C\+|C|D\+|D|F)$" title="กรุณากรอกเกรดที่ถูกต้อง เช่น A, B+, B, C+, C, D+, D, F"><br>
+
+            <label for ="even_number">เลขคู่</label>
+            <input type="text" name="even_number"
+            required
+            pattern="^(0|[2468]|[1-9][02468])$" title="กรุณากรอกเลขคู่ เช่น 0, 2, 4, 6, 8, 10, 12, ..."><br>
+
+            <label for ="password">รหัสผ่าน:</label>
+            <input type="password" name="password"
+            required
+            pattern="^thai[a-zA-Z0-9_-]{4,}$" title="กรุณากรอกรหัสผ่านที่ถูกต้อง เช่น thai1234, thai5678 (รหัสผ่านต้องขึ้นต้นด้วย thai และตามด้วยตัวอักษรหรือเลขรวมอย่างน้อย 4 ตัว ห้ามมีอักขระพิเศษหรือเว้นวรรค)" minlength="8" maxlength="20"><br>
+            <!--รหัสผ่าน 8 ตัวขึ้นไป, มีคำว่า thai , ไม่มี่ตัวอักษรพิเศษ ห้ามเว้นวรรค/ช่องว่าง-->
+
+            <!--ทะเบียนรถยนต์ เลข1 ตัวอักษร 2ตัว เว้นวรรค ตามตัวเลข 4 หลัก ชื่อจังหวัด-->
+            <label for="car_plate">ทะเบียนรถยนต์:</label>
+            <input type="text" name="car_plate"
+            required
+            pattern="^[0-9]{1}[ก-ฮ]{2}\s[0-9]{4}$" title="กรุณากรอกทะเบียนรถยนต์ที่ถูกต้อง เช่น 1กข 1234, 2คง 5678 (เลข 1 หลัก ตัวอักษรไทย 2 ตัว เว้นวรรค ตัวเลข 4 หลัก)" maxlength="8"><br>
+
+            หมายเลขครุภัณฑ์
+            <label for="asset_number">หมายเลขครุภัณฑ์:</label>
+            <input type="text" name="asset_number"
+            required
+            pattern="^[0-9]{4}-[0-9]{4}-[0-9]{4}$" title="กรุณากรอกหมายเลขครุภัณฑ์ที่ถูกต้อง เช่น 1234-5678-9012"><br>
+
+            <label for ="number">Age:</label>
+            <input type="number" name="age" min="1" max="100" placeholder="Enter your age" required>
+            <label for="rank">Rank (1-5):</label>
+            <input type="range" name="rank" min="1" max="5" value="3" required>
+            <input type="submit" value="ส่งข้อมูล">
+        </form>
+    </div>
+</body>
+</html>
